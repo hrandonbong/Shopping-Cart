@@ -1,0 +1,19 @@
+body {
+    font-family: 'Courier New', monospace;
+    text-align:center;
+    background-color: #34495E;
+    color: white;
+    font-size: 20px;
+}
+
+.border {
+    position: relative;
+    margin: 25%;
+    width: 50%;
+}
+
+.table {
+    position: relative;
+    margin: 25%;
+    width: 50%;
+}

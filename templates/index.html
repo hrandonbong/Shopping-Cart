@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="{{ url_for('static',filename='styles/styles.css') }}" rel="stylesheet">
+    <title>Shopping Cart</title>
+</head>
+<body>
+
+<div class="border">
+  <form action="/add" method="get" class="form">
+    <label>Shopping Cart</label>
+    <br><br>
+    <input name="items" placeholder="item" type="text">
+    <!--<input type="submit" value="ADD" onclick="toggle_display()">*-->
+      <input type="submit" value="ADD">
+  </form>
+<br>
+    <table class="table">
+    <tr>
+        <th>SHOPPING CART</th>
+    </tr>
+        <br><br>
+
+        {% for item in items %}
+    <tr>
+        <td>
+            <p class="cart">{{items[item][0]}}</p>
+            <p class="price">{{items[item][3]}}</p>
+<!--            <img src="/static/{{items[item][1]}}" class="project-img" width="325" height="250">-->
+            <img src="{{items[item][1]}}" class="project-img" width="325" height="250">
+            <a href={{items[item][2]}}>{{items[item][2]}}</a>
+            <br>
+            <button onclick="window.location.href='./complete/{{item}}';">DELETE</button>
+        </td>
+    </tr>
+        {% endfor %}
+    </table>
+</div>
+
+<script src="{{url_for('static', filename='javascript.js')}}"></script>
+
+</body>
+</html>

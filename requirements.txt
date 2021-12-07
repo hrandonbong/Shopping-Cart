@@ -1,0 +1,34 @@
+# Python Version 2.7
+# This file is used by pip to install required python packages
+# Usage: pip install -r requirements.txt
+# Run file by typing the following command in the terminal window:
+# export FLASK_APP=application.py (+ press enter)
+# flask run (+ press enter)
+
+# Flask Framework
+click==7.1.2
+Flask==1.1.2
+itsdangerous==1.1.0
+Jinja2==2.11.2
+MarkupSafe==1.1.1
+Werkzeug==1.0.1
+aniso8601==8.0.0
+six==1.15.0
+SQLAlchemy==1.3.18
+python==3.6.7
+gunicorn == 19.9.0
+
+# Flask Packages
+Flask==1.1.2
+Flask-Login==0.4.0
+Flask-Migrate==2.0.2
+Flask-Script==2.0.5
+Flask-SQLAlchemy==2.4.3
+Flask-WTF==0.14.2
+Flask-User==1.0.1.5
+Flask-RESTful==0.3.8
+
+# Automated tests
+pytest==3.0.5
+pytest-cov==2.4.0
+pytz==2020.1
